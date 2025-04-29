@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Fourteen</title>
+    <style>
+        table{
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+            color: gray;
+            font-weight: bolder;
+        }
+        .letters{
+            color: white;
+        }
+        .letterA{
+            background-color: blueviolet;
+        }
+        .letterB{
+            background-color: orangered;
+        }
+        .letterC{
+            background-color: crimson;
+        }
+        .letterD{
+            background-color: yellowgreen;
+        }
+        .letterE{
+            background-color: peru;
+        }
+        .letterF{
+            background-color: darkcyan;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th rowspan="2" colspan="3" class="letterA letters">A</th>
+            <th rowspan="2" colspan="4" class="letterB letters">B</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <th colspan="7" class="letterC letters">C</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <th rowspan="2" colspan="6" class="letterD letters">D</th>
+            <th class="letterE letters">E</th>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <th class="letterF letters">F</th>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

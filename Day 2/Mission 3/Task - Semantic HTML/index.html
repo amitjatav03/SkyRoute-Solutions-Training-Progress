@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        nav{
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            gap: 2rem;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px 20px;
+        }
+
+        footer{
+            padding: 1rem;
+            text-align: center;
+        }
+        .section{
+            background-color: rgb(204, 252, 133);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        article{
+            background-color: rgb(249, 167, 138);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        aside{
+            background-color: rgb(137, 164, 244);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="background-color: black; color: white;">
+            <ul>
+                <li style="list-style: none;">Home</li>
+                <li style="list-style: none;">About</li>
+                <li style="list-style: none;">Contact</li>
+                <li style="list-style: none;">Blog</li>
+            </ul>
+            <h2>LOGO</h2>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Main Section</h1>
+        <section class="section">
+            <h2>Section</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, rerum eaque earum veritatis nam, voluptatum assumenda quaerat, omnis quam repudiandae perspiciatis quisquam amet ut. Ratione culpa eveniet veritatis consequuntur omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi adipisci ducimus nulla rerum sapiente, eaque temporibus ipsa doloribus voluptates dolor eum deleniti esse aliquid commodi, nobis magni iusto delectus atque. Consectetur, quo necessitatibus aspernatur rerum natus impedit maxime distinctio ipsam quisquam? Est dicta at aliquam amet numquam officiis sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corrupti, labore quia optio harum qui delectus. Necessitatibus omnis unde molestiae quo cum quibusdam qui, nostrum atque repudiandae voluptatibus consequatur possimus? Totam earum, sed esse numquam mollitia facere ut maxime tempora quasi consectetur tenetur a eius dolore provident illo molestias inventore, aperiam facilis, deserunt quidem ratione blanditiis. Accusantium itaque obcaecati neque iusto, maxime pariatur aut perspiciatis possimus, dolor, ea veritatis incidunt minima reiciendis adipisci vero reprehenderit natus! Rem voluptatum accusamus ea sequi minima voluptate, consequuntur ratione consectetur ipsa aliquam exercitationem obcaecati nostrum quisquam commodi, vero nobis. Molestiae asperiores provident atque dolorum.
+        </section>
+        <article>
+            <h2>Article</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci quam unde nobis sit delectus dolorum? Sequi, laborum! Veniam, alias necessitatibus? Nesciunt ipsam quam odit minima ea, nihil recusandae. Non culpa vero libero ad totam maxime eaque sequi. Sapiente alias molestiae voluptatem quidem, porro ullam ipsam nihil hic accusantium, fuga minima ab voluptate debitis deserunt iste blanditiis magnam architecto vel et saepe veritatis odit. Neque porro pariatur sapiente animi cum explicabo eos. Est quos natus voluptatum eveniet. Repudiandae autem corrupti sapiente, soluta voluptatibus necessitatibus unde dicta nobis minima mollitia quam eos, quod voluptatem ducimus voluptates vero laudantium modi? Tempore in, sequi doloremque dolor nesciunt id fugiat, sed similique possimus neque laborum nulla magni animi excepturi corrupti temporibus itaque minus beatae est! Atque odio eaque hic suscipit autem itaque quia tenetur! Assumenda animi vitae quam adipisci ab aperiam voluptatem reiciendis neque. Magni expedita nobis similique, odit soluta repellendus perspiciatis neque officiis, provident, accusantium dicta. Eveniet nesciunt dolor, asperiores corrupti at voluptatem incidunt iusto. Itaque obcaecati fugiat ea fugit recusandae aliquam? Sed blanditiis delectus cum aperiam in commodi molestias dolorum! Magni quos culpa laborum fugiat rem mollitia corporis nostrum repellendus modi inventore perferendis aspernatur quibusdam itaque accusamus, ipsam amet laudantium porro similique debitis.
+        </article>
+        
+        <section style="display: flex; gap: 20px;">
+            <aside>
+                <h2>Aside Section 1</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat assumenda molestiae deleniti voluptates autem numquam incidunt, in dolores corrupti, laboriosam possimus excepturi inventore commodi! Pariatur natus veritatis, quasi veniam consequatur velit quos alias eaque, possimus asperiores reiciendis? Vero atque et, fuga quam consequuntur nisi repudiandae veniam. Repudiandae odio exercitationem doloribus repellendus dolor iste a possimus sapiente ea voluptate aperiam veniam nemo eligendi, sequi hic non dignissimos id commodi, 
+            </aside>
+            <aside>
+                <h2>Aside Section 2</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ut iusto. Quaerat, distinctio veniam suscipit labore rerum ea consequuntur asperiores dolore, repudiandae, iste beatae sint? Dolorum sit tenetur dolores praesentium, nihil, suscipit molestiae accusantium vero repellendus modi, fuga eveniet necessitatibus fugiat a in earum incidunt aperiam voluptates alias aspernatur sapiente iusto? Amet vel veniam quia temporibus quos voluptatem dolore eaque repellat quibusdam eum, qui quidem dignissimos
+            </aside>
+        </section>
+    </main>
+
+    <footer style="background-color: rgb(48, 42, 42); color: white; position: absolute; bottom: 0; width: 100vw;">
+        Copyright &copy; All Rights Reserved
+    </footer>
+</body>
+</html>

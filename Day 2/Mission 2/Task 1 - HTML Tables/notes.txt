@@ -1,0 +1,47 @@
+HTML Tables
+elements and tags used:-
+1. table
+2. caption
+3. colgroup
+4. col
+5. th
+6. td
+7. tr
+8. thead
+9. tbody
+10. tfoot
+
+
+HTML Table Colgroup
+
+- The <colgroup> element is used to style specific columns of a table.
+- The <colgroup> element should be used as a container for the column specifications.
+- Each group is specified with a <col> element.
+- The span attribute specifies how many columns that get the style.
+- The style attribute specifies the style to give the columns.
+
+
+* The <colgroup> tag must be a child of a <table> element and should be placed before any other table elements, like <thead>, <tr>, <td> etc., but after the <caption> element, if present.
+
+
+* There is only avery limited selection of CSS properties that are allowed to be used in the colgroup:
+1. width
+2. visibility
+3. background
+4. border
+
+Caption tag
+* The <caption> tag should be inserted immediately after the <table> tag 
+
+
+
+<thead> - defines header part of the table
+<tbody> - defines the content of the table 
+<tfoot> - footer of the table 
+* a table should have more than one tbody, but a table must not have more than one thead tags or tfoot tags
+
+
+<table> - defines a structure in the form of rows and columns 
+<tr> - specifies table rows
+<th> - specifies table headers 
+<td> - used to create table cells, stands for table data

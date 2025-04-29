@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 10</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0 20px;
+        }
+        .one, .eight, .fifteen{
+            background-color: blueviolet;
+        }
+        .two, .nine, .sixteen{
+            background-color: orangered;
+        }
+        .three, .ten, .seventeen{
+            background-color: burlywood;
+        }
+        .four, .eleven, .eighteen{
+            background-color: cornflowerblue;
+        }
+        .five, .twelve{
+            background-color: coral;
+        }
+        .six, .thirteen{
+            background-color: lightgreen;
+        }
+        .seven, .fourteen{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr class="one">
+            <td rowspan="3">1</td>
+            <td rowspan="2"></td>
+            <td colspan="2"></td>
+            <td rowspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="two">
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="three">
+            <td colspan="2">3</td>
+            <td></td>
+            <td></td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr class="four">
+            <td>4</td>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr class="five">
+            <td>5</td>
+            <td colspan="2"></td>
+            <td rowspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="six">
+            <td>6</td>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr class="seven">
+            <td rowspan="4">7</td>
+            <td rowspan="2" colspan="2"></td>
+            <td></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr class="eight">
+            <td rowspan="3">8</td>
+            <td rowspan="3" colspan="3"></td>
+        </tr>
+        <tr class="nine">
+            <td>9</td>
+            <td></td>
+        </tr>
+        <tr class="ten">
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr class="eleven">
+            <td>11</td>
+            <td colspan="4"></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr class="twelve">
+            <td colspan="3">12</td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr class="thirteen">
+            <td rowspan="5" colspan="3">13</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="fourteen">
+            <td>14</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="fifteen">
+            <td>15</td>
+            <td></td>
+            <td rowspan="2" colspan="2"></td>
+        </tr>
+        <tr class="sixteen">
+            <td rowspan="3">16</td>
+            <td rowspan="3"></td>
+        <tr class="sixteen">
+            <td colspan="2"></td>
+        </tr>
+        </tr>
+        <tr class="seventeen">
+            <td>17</td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="eighteen">
+            <td>18</td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+</body>
+</html>

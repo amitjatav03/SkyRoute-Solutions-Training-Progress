@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Six</title>
+
+    <style>
+        body{
+            background-color: coral;
+        }
+        fieldset{
+            background-color: rgb(248, 248, 250);
+        }
+        legend{
+            text-align: center;
+        }
+        h1{
+            padding: 5px 10px;
+            background-color: black;
+            color: white;
+        }
+        /* table{
+            text-align: end;
+        } */
+        th, td{
+            padding:8px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        .labels{
+            text-align: end;
+        }
+        #top{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Survey Form</h1></legend>
+        
+        <form>
+            <table>
+                <tr>
+                    <td colspan="2" id="top">Let us know how we can improve freeCodeCamp</td>
+                </tr>
+                <tr>
+                    <td class="labels"><label for="name">Name:</label></td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labels"><label for="email"></label>Email:</td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labels"><label for="age">Age:</label></td>
+                    <td>
+                        <input type="number" min="1" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labels"><label for="role">Which option best describes your current role?</label></td>
+                    <td>
+                        <select name="role" id="role">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="employee">Employee</option>
+                            <option value="business">Business</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labels"><label for="radios">How likely is that you would recommend <br> freeCodeCamp to a friend?</label></td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1">
+                        <label for="radio1">Definitely</label>
+                        <br>
+                        <input type="radio" name="radios" id="radio2">
+                        <label for="radio2">May be</label>
+                        <br>
+                        <input type="radio" name="radios" id="radio3">
+                        <label for="radio3">Not sure</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labels"><label for="role">What do you like most in FCC:</label></td>
+                    <td>
+                        <select name="role" id="role">
+                            <option value="">Select an option</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labels"><label for="ckboxes">Things that should be improved in the future <br>(Check all that apply):</label></td>
+                    <td>
+                        <input type="checkbox" name="ckboxes" id="ck1">
+                        <label for="ck1">Front-end Projects</label>
+                        <br>
+                        <input type="checkbox" name="ckboxes" id="ck2">
+                        <label for="ck2">Back-end Projects</label>
+                        <br>
+                        <input type="checkbox" name="ckboxes" id="ck3">
+                        <label for="ck3">Data Visualization</label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

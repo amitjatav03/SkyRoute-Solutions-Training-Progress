@@ -1,0 +1,71 @@
+HTML forms:-
+Forms -> structure -> to collect user input
+
+Tags:-
+<form> : to create html forms for user input 
+<input> : can be displayed in many forms 
+            - textfield,radiobuttons,checkboxs,calender
+<label> : create labels for input tags, screen reader
+            for = "_" (attribute)
+    - id attribute of input tag and for attribute of label tag, value should be equal
+    - to map the label with their corresponding input tag
+
+
+Input tag:-
+'type' attribute:-
+by default input, type = "text"
+for radio buttons, type = "radio"
+for check boxes, type = "checkbox"
+for date picker, type = "date"
+
+we have to specify id in every input tag 
+label -> for = input -> id (for linking or mapping)
+id = "first" 
+we can specify name of input tag also
+name = "first"
+
+
+<input type = "submit">
+hamare form ke andar jitna data hoga wo submit ho jayga
+pure form ka submit button create kar dega 
+for sending the data of form into the server 
+
+action = " " 
+kya action lena hai data ke saath wo ham specify kar sakte hain
+on the backend side 
+
+value = " "
+kisi input tag par kya likha aana chahiye like Click here, Submit, etc.
+
+placeholder = " "
+used to create faded text or grayed text that is used to clarify what to input in that particular input tag
+
+
+
+Form elements:-
+1. input -> create textfield, checkboxes, radiobuttons
+2. label -> label the input tag 
+3. select -> drop down menu
+4. option -> create options 
+5. button -> to create buttons 
+6. textarea -> multiline input 
+7. fieldset -> used to group multiple elements
+8. legend -> to give captions in particular section or fieldset
+
+
+
+
+Input types
+<input> 
+    - textfield
+    - button
+    - radio
+    - checkbox
+    - file-select 
+    - image
+    - password
+    - date
+
+Homework:-
+1. In dropdown menu, can we select multiple options, if yes how?
+2. How we can select only one radiobutton from multiple radiobuttons?
