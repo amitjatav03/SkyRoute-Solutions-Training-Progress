@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts & Colors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        p{
+            /* ------ FONTS -------- */
+            /* font-style: italic; */
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+            /* fallback system */
+            /* fonts which are already existed in our browsers and devices, they are called web safe fonts */
+            font-weight: 100; /* specify degree of darkness/thickness */
+            line-height: 30px; /* specify space between two lines */ 
+        }
+
+        #firstPara{
+            background-color: yellow;
+            /* color: brown; */
+        }
+
+        #secondPara{
+            background-color: rgb(93, 105, 172);
+        }
+
+        #thirdPara{
+            background-color: rgba(67, 168, 81, 0.5);
+        }
+
+        .firstClass{
+            background-color: #d98b50; /* #rrggbb */
+            /* background-color: #d98b5055; #rrggbbaa */
+        }
+
+        #fourPara{
+            /* hsl -> hue saturation lightnesss */
+            background-color: hsl(165, 66%, 50%)
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to CodeHelp</h2>
+
+    <p id="firstPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur rerum deserunt laborum nisi deleniti, totam quasi necessitatibus. Repellendus, odio. Quod.</p>
+
+    <p id="secondPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dolores animi omnis temporibus enim cumque, totam esse quis libero maiores perspiciatis, consectetur unde deserunt corrupti voluptatibus at sequi aperiam aspernatur.</p>
+
+    <p id="thirdPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsa accusantium, libero provident dolorum necessitatibus eum laboriosam ut impedit ad nesciunt nemo! Consequuntur quidem delectus voluptate dicta expedita dolorum molestias tenetur sapiente, maxime incidunt harum id minus hic saepe et.</p>
+
+    <p class="firstClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium nulla, laboriosam repellendus beatae magni iure! Doloremque, natus sit? Facere voluptates quaerat at aperiam recusandae distinctio?</p>
+
+    <p id="fourPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quam ab consequuntur magnam aspernatur beatae suscipit porro, debitis nesciunt voluptatibus tenetur delectus, et, quis nisi velit ratione expedita quas assumenda.</p>
+</body>
+</html>

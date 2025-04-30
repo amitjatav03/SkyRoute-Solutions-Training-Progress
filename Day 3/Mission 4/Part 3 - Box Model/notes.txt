@@ -1,0 +1,15 @@
+CSS Box Model
+--------------
+In CSS, the term "box model" is used when talking about design and layout.
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+
+1. Content - The content of the box, where text and images appear
+2. Padding - Clears an area around the content. The padding is transparent
+3. Border - A border that goes around the padding and content
+4. Margin - Clears an area outside the border. The margin is transparent
+
+Box model -> content -> renders/display -> under a rectangular box
+
+HW:-
+What is box-sizing property?
+Why it is best practice to assign "border-box" to box-sizing property?

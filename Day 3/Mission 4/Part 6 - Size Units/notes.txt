@@ -1,0 +1,41 @@
+CSS Size Units:-
+- px
+- %
+- vw
+- vh
+- rem 
+- em
+
+
+Absolute unit
+ (fixed length)
+- cm
+- mm
+- in
+- px
+
+Relative unit 
+ (depends on x factor)
+parent -> 100px
+child -> 50%
+ child width become 50% relative to its parent's width
+    i.e. child = 50px
+
+
+
+physical pixel -> px -> 1/96 in
+
+
+HW: Difference between Physical pixel and Logical pixel?
+HW: Difference between ppi and dpi?
+
+
+Relative units
+- em -> relative to its parent element
+- rem -> relative -> root element
+
+HW: em unit with padding
+
+
+* It is not recommended to use absolute units for responsiveness
+* It is best practice to use reletive units

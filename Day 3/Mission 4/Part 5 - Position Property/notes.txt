@@ -1,0 +1,35 @@
+CSS Position Property
+- static (by default)
+- relative
+- absolute
+- fixed
+- sticky
+
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky)
+by default:-
+position: static;
+
+
+HW: <img> tag is of which type of element (block, inline or inline-block)
+
+position: static;
+- by default
+- top, bottom, left, right won't work
+
+
+position: relative;
+- current window ke relative mein apne elements ko position kar sakta hoon
+- 4 properties can be used - top, left, right, bottom
+- gap maintained
+
+
+position: absolute;
+- we have to specify element's closest ancestor position: relative;
+- then wo uske ancestor ke relative move ho sakta hai
+- relative to its closest positioned ancestor
+- no gap maintained
+- top, left, right, bottom can be used
+
+
+    fixed               sticky
+entire webpage      relative to parent container/element

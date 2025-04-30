@@ -1,0 +1,15 @@
+* csstricks.com
+
+Float:-
+What?
+
+Clear:-
+clear: right;
+means mere right mein koi element float nahi karna chahiye
+
+Great collapse
+if we set all the child items to float: left or right;
+it overflows and the parent element will collapse 
+
+to prevent this
+    overflow: auto;

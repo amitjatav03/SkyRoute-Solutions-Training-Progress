@@ -1,0 +1,70 @@
+CSS Display Property
+
+What? -> elements (div, a, p, h1) - render/visible
+Display property ke dwara kisi ek element ko display/viewport/webpage par kese render/visible karwana hai wo darshaya jata hai
+
+1. inline
+2. block
+3. none
+4. inline-block
+
+
+Display
+The display property specifies the display behavior (the type of rendering box) of an element.
+
+
+Block elements
+- div, p, h1
+1. new line
+2. width - viewport extreme left -> extreme right 
+3. we can specify custom width and height 
+4. custom margin/padding -> respect 
+
+HW: 10 different block elements available in HTML?
+
+
+Box-sizing:-
+good practice
+box-sizing: border-box;
+
+without border-box?
+    - by default: content-box;
+actual box size = 100px X 100px
+margin = 1px
+padding = 10px
+now box size = 122px X 122px
+
+
+with border-box>
+actual box size = 100px X 100px
+padding = 10px
+content size shrinks to = 80px X 80px
+now box size = 100px X 100px
+
+
+Inline:-
+    - a, span etc.
+1. same line (try)
+2. width -> content width
+3. custom width/height -> X
+4. custom margin/padding -> X(horizontal margins only) / respects padding 
+
+    Block                      Inline
+1. new line                    same line
+2. width: ELeft -> ERight      width: content width 
+3. W/H can be applied          W/H X
+4. M/P can be applied          M/P horizontal
+
+
+inline-block
+    - behaves like inline 
+    - we can set custom width/height
+
+
+List of block-level elements
+<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>
+
+
+List of inline elements
+<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>, <map>, <object>, <output>, <q>, <samp>, <script>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>, <time>, <tt>, <var>
+

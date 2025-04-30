@@ -1,0 +1,47 @@
+CSS - Cascading Style Sheet
+
+HTML
+Provides
+- skeleton
+- structure 
+- description
+- semantics
+to a web page
+
+
+CSS 
+- styling
+- appearance
+
+Three ways to add CSS:-
+1. Inline
+2. Internal
+3. External
+
+h1{color: green}
+h1 -> selector
+color -> property
+green -> value
+
+Priority
+Inline > Internal
+
+But if we want to give internal css more priority
+we have to use "!important" keyword after value
+
+p{
+    background-color: blue !important;
+}
+
+
+HW:-
+CSS depends on which 4 factors
+on which properties will work and which will not
+
+
+Selectors:-
+used to target the HTML elements for styling
+1. Element selector - using tagname (p, h1, article, section, etc.)
+2. Id selector - #idname
+3. Class selector - .classselector
+4. Group selector 
