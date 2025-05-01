@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries 03</title>
+    <style>
+        .container{
+            border: 4px solid black;
+            background-color: cornflowerblue;
+            display: flex;
+            flex-direction: row;
+            width: 800px;
+            padding: 2px;
+            margin: 10px;
+        }
+        #box-left{
+            background-color: coral;
+            border: 2px solid black;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #box-right{
+            background-color: crimson;
+            border: 2px solid black;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+        p{
+            border: 1px solid brown;
+        }
+        img{
+            width: 170px;
+            height: 150px;
+        }
+
+        @media (max-width: 640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-left">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+
+        <div id="box-right">
+            <img src="img.jpg" alt="image">
+        </div>
+    </div>
+</body>
+</html>

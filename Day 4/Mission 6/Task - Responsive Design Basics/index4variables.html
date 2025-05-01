@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        :root{
+            --brownColor: brown;
+            /* we can use this variables inside root in all the elements in our DOM */
+        }
+        .container{
+            background-color: cornflowerblue;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* Variables:-  */
+            --primary-color: coral;
+            --custom-width: 330px;
+            
+            /* background-color: coral;
+            width: 330px;
+            height: 330px; */
+            background-color: var(--primary-color);
+            width: var(--custom-width);
+            height: var(--custom-width);
+            border: 5px solid var(--brownColor);
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.png" alt="" width="50px" height="50px">
+            <h2>Welcome to CodeHelp</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis consequuntur ad perspiciatis nisi accusamus. Velit, delectus enim! Blanditiis temporibus nemo ut, praesentium dolore facere minima?</p>
+        </div>
+    </div>
+</body>
+</html>

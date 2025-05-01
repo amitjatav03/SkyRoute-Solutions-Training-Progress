@@ -1,0 +1,18 @@
+Media Query
+It is a tool through which we can define that on which display size what will be the arrangement of my same website.
+Media queries allow you to apply CSS styles depending on a device's screen or other characteristics such as screen resolution or browser viewport width.
+
+For Responsiveness
+Display size
+Phone - arrangement x - abc.com
+Tablet - arrangement y - abc.com
+Desktop - arrangement z - abc.com
+
+Same website on different devices renders in a different ways.
+
+mein different different display devices ke accordingly mein koi particular css apply kar sakta hoon kisi webpage ke upar mein media queries ke through apply kar sakta hoon
+xs 400px - css1 render
+s  500px - css2 render
+md 800px - css3 render
+lg 1200px
+xl 1800px

@@ -1,0 +1,109 @@
+* Codehelp -> Fruitbox Flex 
+
+Flexbox -> 1-D Layout Method
+    -> Flexible-box
+Powerful tool that is used to create layouts of a website
+We can create layouts horizontally or vertically aligned
+
+Flexbox is a one-dimensional layout method for arranging items in rows or columns.
+
+
+Terminologies:-
+(by default)
+horizontal axis -> main axis
+vertical axis -> cross axis
+
+parent element -> flex container
+child elements -> flex items
+
+
+To create flex container
+    display: flex;
+and child elements will become flex items
+
+
+* When we mark a container --> display: flex;
+by default -> flex-direction: row;
+by default -> flex-wrap: nowrap;
+
+
+flex-direction -> row -> main axis - horizontal
+               -> column -> main axis - vertical
+
+
+Shorthand Notation:-
+ flex-flow: row wrap-reverse; 
+
+
+Properties for flex container:-
+
+Justify Content:-
+justify-content -> main-axis ke accordingly cheezon ko place karta hai
+values -> start, end, center, 
+        space-around, space-evenly, space-between
+
+
+Align Items:-
+align-items -> cross-axis ke accordingly cheezon ko place karta hai
+values -> flex-start, flex-end, center
+        start, end, stretch
+
+by default -> align-items: stretch;
+
+
+Align content:-
+align-content -> used to manage spacing between items when they are wrapped
+align-content: start;
+
+
+
+Properties for flex items:-
+
+order -> used to change sequence for flex items
+
+flex-shrink -> specify item's shrink speed
+eg.
+flex-shrink: 4; 
+then the particular flex item will shrink x4 more speed than other flex items
+
+flex-grow
+- flex-items will take full space available
+- the flex-grow css property sets the grow factor, which specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+
+
+flex-basis 
+- used to set initial dimension of flex items
+
+
+align-self
+- The align-self css property overrides a grid or flex item's align-items value.
+- In grid, it aligns the item inside the grid area.
+- In Flexbox, it aligns the item on the cross side.
+values -> flex-start, flex-end, center, stretch
+
+
+Shorthand Notation
+flex: flex-grow flex-shrink flex-basis;
+
+
+
+Flex-container Properties:-
+1. display
+2. flex-direction
+3. flex-wrap
+4. flex-flow
+5. justify-content
+6. align-items
+7. align-content
+
+Flex-item Properties:-
+1. order
+2. flex-grow
+3. flex-shrink
+4. flex-basis
+5. flex
+6. align-self
+
+
+* Collapsing margins is only relevant in the vertical direction.
+* Margins don't collapse in a container with display set to flex or grid.

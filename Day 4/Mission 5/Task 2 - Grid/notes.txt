@@ -1,0 +1,51 @@
+CSS Grid:-
+    - Create Layout
+
+parent container
+    -> display: grid;
+
+child items
+
+
+display: grid
+
+Properties for parent container
+1. row-gap
+2. col-gap
+3. grid-template-rows
+4. grid-template-columns
+5. justify-items (horizontal alignment)
+6. align-items (vertical alignment)
+7. place-items (shorthand)
+
+
+Fractional Unit (FR Unit):-
+Eg.1:-
+lets entire width of grid is 3000px
+and grid has total of 3 columns 
+    col1(1fr)   col2(1fr)  col3(1fr)
+    => 1+1+1 = 3fr = 3000px
+        1fr = 1000px
+    
+Eg.2:-
+lets entire width of grid is 3000px
+    col1(2fr)   col2(1fr)   col3(1fr)
+      1500px      750px       750px
+    => 2+1+1 = 4fr = 3000px
+        1fr = 3000/4 = 750px
+
+
+HW: inline-grid?
+
+
+Properties for child items
+1. grid-column-start
+2. grid-column-end
+    (konse column line se konse column line tak le jana chahte ho)
+3. grid-row-start
+4. grid-row-end
+5. grid-row
+6. grid-column
+7. justify-self (horizontally)
+8. align-self (vertically)
+9. place-self (shorthand)
