@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    color: rgb(55, 55, 55);
+}
+
+#nav h3{   
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav-left{
+    display: flex;
+    gap: 250px;
+}
+
+#nav-right{
+    display: flex;
+    gap: 25px;
+}
+
+i{
+    color: rgb(55, 55, 55);
+}
+
+#main{
+    padding: 0 60px;
+    margin-top: -20px;
+    line-height: 128px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(55, 55, 55);
+}
+
+#main h1{
+    font-size: 17vh;
+    letter-spacing: -9px;
+    font-weight: 500;
+}
+
+
+#page2{
+    width: 100%;
+    height: 100%;
+}
+
+#page2-top{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    padding-top: 150px;
+}
+
+#page2-top p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#top-right{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#line{
+    width: 70px;
+    height: 2px;
+    background-color: black;
+}
+
+#cards-section{
+    margin-top: 40px;
+    padding: 0 60px;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    height: calc(100%-20px);
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 100%;
+    height: 62%;
+    border-radius: 15px;
+}
+
+
+.card-btm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    padding: 15px 25px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.btn:hover .btn-arrow{
+    color: white;
+}
+
+
+.btn-arrow{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
