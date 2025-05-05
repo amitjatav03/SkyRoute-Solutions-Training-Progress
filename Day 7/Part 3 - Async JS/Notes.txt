@@ -1,0 +1,239 @@
+Some Questions:-
+
+
+Synchronous
+ek kaam jab tak khatam nahi hoga tab tak dusra shuru nahi hoga
+
+Asynchronous
+kaam ko hamne ek saath chalu kiya, jo kaam pehle complete ho jayga uska answer pehle mil jayga
+
+
+1. sync and async kya hota hai?
+=> sync matlab ek ke baad dusra hoga, jab tak ek command complete naa ho, dusra shuru nahi hoga
+
+task a - 5s
+task b - 2s
+task c - 15s
+task d - 1s
+all tasks will be done one by one 
+total time taken = 23s
+
+=> async matlab saare kaam ek saath shuru kardo, jiska answer pehle aajaye uska jawaab dedena
+
+by taking above example using async
+all tasks will start together
+task d will be done first, then b, then a, then finally c
+total time taken = 15s
+
+
+
+Q. kaise pata chalta hai ki hum sync code likh rahe hai ya async
+
+If you are using any of following in your code, then you are using async 
+setTimeout
+setInterval
+promises
+fetch
+axios
+xmlHttpRequest
+
+If you are not using these, then you are writing sync code
+console.log("hey");
+console.log("hey 2");
+console.log("hey 3");
+console.log("hey 4");
+
+
+
+
+2. async js hai kya?
+
+=> kai baar aapka final code depended hota hai kisi aur ke server par, is case mein humein nahi pata hota ki answer uske server se kab laut kar aayega, to hum kya nahi kr skte is writing sync code, isse nipatne ke liye hum log async code likh dete hai taaki blocking naa ho and jab bhi answer aaye humara answer ke respect mein chalne waala code chal jaaye
+
+async code ka main motive hota hai ki un cases mein jinmein huma pata nahi code ka answer kitni der mein aayega to jab bhi aa jaaye uske answer ke respect mein koi particular code chala dena
+eg. facebook se photo laao aur jab photo aajaaye show kar dena
+
+facebook se photo lekar aao
+    fir photo show kar do
+
+
+
+
+3. js is not asynchronous?
+
+=> async ka matlab hota hai do kaam ek saath hona
+par kabhi bhi javascript do kaam ek saath nahi kar sakti 
+
+
+------- a 
+------- b 
+======= c(async code)
+------- d 
+
+
+main stack 
+-----------
+    (synchronous code always moves to main stack)
+    a (X)1
+    b (X)2
+    d (X)3
+
+jab main stack khaali hota hai sirf tab side stack ko check kiya jata hai
+
+side stack 
+-----------
+    c (agar c ka answer aa chuka hai)
+        then c moves to the main stack
+
+
+
+
+E.g.2
+a ------- (sync)
+b ------- (sync)
+c ------- (async)
+d ------- (async)
+
+main stack
+-----------
+    a execution -> (X)1
+    b execution -> (X)2
+    d (X)3
+    c (X)4
+
+
+same stack
+-----------
+    c (pucha jayga ki tum complete ho gaye ho, if he needs more time than moves to d)
+    d (d ne bola mera kaam ho gaya hai then d moves to main stack)
+
+    c (then ask from c again ki kaam complete hua ki nahi, c ne bola 1s aur)
+
+    c (kaam complete hua, usne bola hogaya, then c moves to stack)
+
+
+
+                    event loop
+        main stack -----------> side stack
+                   <-----------
+
+
+
+jo bhi main stack par hota hai wo output karta hai and jo bhi side stack par hota hai wo behind the scenes processing kar sakta hai aur jab uski processing complete ho use main stack mein laa kar chalaya ja sakta hai.
+
+main stack => execution 
+
+
+
+event loop:- event loop main stack mein side stack se cheezein laata hai, jo bhi side stack mein process complete ho jati hai use check karkar
+
+
+
+single thread 
+    1 computation karne ki taakat - 1 thread
+    
+javascript is single threaded
+javascript ek baar mein keval ek hi computation kar sakti hai
+
+
+
+
+
+Contents:-
+1. async ki poori kahani
+
+
+2. single threading and multi threading
+single threading - ek kaam/computation ek baar mein karna
+multi threading - do cheezein ek saath chalana
+
+
+3. callbacks 
+    => functions 
+
+(async ka code):-
+fetch
+axios
+promises
+setTimeout
+setInterval
+
+(jab complete ho jaye uska ans yaha hai)
+then catch 
+callbacks
+async await
+
+
+callback humesha ek function hota hai, yeh sirf tab chalta hai jab async code ka completion ho jata hai
+
+
+
+setTimeout(function(){}, 10000);
+
+
+fetch()
+.then()
+
+
+- async code likhne ke liye
+fetch
+xmlHttpRequest
+axios
+promises
+setTimeout
+setInterval
+
+
+- inka answer chalane ke liye
+callbacks
+then catch
+async await
+
+
+
+4. promises
+
+three states possible-
+    1. pending 
+    2. resolve
+    3. reject
+
+cases of promises can be:-
+initially in pending state
+    1. resolve
+    2. reject 
+
+if resolved 
+    then
+
+if reject 
+    catch
+
+
+
+
+5. then and catch
+
+
+6. async await
+
+=> koi bhi esa function jisme aap async code likhenge, kyoki async code hai to aap promises ka istemaal kar sakte hai, jab suka answer aayega aapko then lagana padega, us then ko lagane se bachne ke liye, aap async await ka istemaal kar sakte hain.
+
+
+7. 5 use cases ekdum real world waale
+    1) node mein jab database likhte hain
+    2) fetch
+    3) setTimeout
+    4) setInterval
+    5) third party se data laate waqt
+
+[concept aside]
+1. concurrency, parallelism and throttling
+concurrency => js mein sync code and async code ek saath process ho raha tha ye hai concurrency
+
+parallelism => focus jaada karta hai different processors and unke cores par kaam ko chalaane par
+
+throttling => kisi code ko control karna number of executions
+
+
+

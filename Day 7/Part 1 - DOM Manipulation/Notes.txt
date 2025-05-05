@@ -1,0 +1,140 @@
+DOM - Document Object Model
+
+Jo bhi ham website par dekhte hain wo sab kuch body tag ke andar banta hai, ab jo body mein banta hai wo hame website par dikhta hai, DOM actually hota hai thoda aasan shabdon mein HTML tag aur uska pura control JS mein
+
+for eg.
+Kabhi aap chahte ho ki aap ek button par click karke div ko gayab kardein
+
+HTML mein koi bhi aisa feature nahi hai jo ki click ko handle kar sake and thats where JS enters
+
+
+Aisi JS jo aapke webpage ki cheezon ko badal sake, aisi js ko ham perform/implement kar sakte hain DOM ke saath
+Aisa JS ka koi bhi code jo webpage mein koi bhi change karega wo JS ka DOM ka code kehlayga
+
+
+DOM Manipulation - body mein kuch bhi change karna ya manipulate karna actually mein DOM Manipulation kehlata hai.
+
+
+
+usse         yeh kardo       yeh hone par
+selection    change         event
+
+1. selection 
+2. change 
+3. event
+
+
+
+1. Accessing Elements
+----------------------
+    document.querySelector();
+
+ek webpage banao
+uspe kuch elements banao
+
+
+// selection
+document.getElementById();
+document.getElementsByClassName();
+document.getElementsByTagName();
+
+
+
+document.querySelector();
+
+
+
+Selection:-
+
+// id
+document.querySelector('#idname');
+
+// class
+document.querySelector('.classname');
+
+// tag
+document.querySelector('tagname');
+
+
+
+ex. create two img in html and two h3 and select all of them this way :
+    give first image some id and second image a class, give first h3 a class and select the last h3 with id
+
+
+
+* Agar aapke paas bahut saare h3 hain and aap select karte hain to pehla wala h3 select hoga
+
+to select all the h3s present in the html body, we need to use 
+
+document.querySelectorAll('h3');
+
+
+
+
+2. Modifying Elements 
+----------------------
+    innerHTML, textContent
+
+Kisi ko bhi change karne se pehle pehla step hota hai usko select karna 
+
+
+1. textContent
+    used to insert or change the text of an HTML element
+
+2. innerHTML
+    used to insert or change the html of an element
+
+
+
+
+3. Manipulating Styles and Classes
+-------------------------------------
+    style, classList
+
+h1 = document.querySelector("h1");
+h1.style.color = "red";
+h1.style.backgroundColor = "blue";
+
+
+* css properties will be written in camelCase
+
+
+
+
+
+
+4. Creating and Deleting Elements
+-----------------------------------
+    createElement()
+    appendChild()
+    removeChild()
+
+
+// creating and saving element in a variable
+var h1 = document.createElement('h1');
+
+
+
+// append child
+kahaparrakhoge.appendChild(kisejodnahai);
+
+document.querySelector("body").appendChild(h1);
+
+// remove child
+document.querySelector("body").removeChild(h1);
+
+
+
+
+5. Event Handling
+-------------------
+    addEventListener()
+
+Event Object
+
+
+* Jab bhi aap kisi element par koi bhi action karte hain, to waha par by default ek event raise hota hai, ab agar aapne koi event listener nahi banaya hai to wo event ignore kar diya jata hai par agar aapne listener banaya hai us event par to wo event ignore nahi kiya jayga balki uska listener chalega
+
+ele.addEventListener(event, callback);
+
+ele.addEventListener(event, function(){});
