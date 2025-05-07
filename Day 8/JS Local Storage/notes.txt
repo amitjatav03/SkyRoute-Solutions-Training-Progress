@@ -1,0 +1,47 @@
+# local storage
+
+local storage is a web storage object which are not sent to server with each request.
+this data services a full web page refresh and even a full browser restart.
+
+the methods provided by local storage:
+
+1. setItem(key, value) 
+    store key value pair
+
+2. getItem(key)
+    get the value by key
+
+3. removeItem(key)
+    remove the key with its value
+
+4. clear()
+    delete everything
+
+5. key(index)
+    get the key on a given position
+
+6. length
+    the number of stored items
+
+
+## we can get and set values like an object
+
+localStorage.one = 1
+
+alert(localStorage.one)
+
+delete localStorage.one
+
+
+
+
+** important notes **
+
+1. both key and values must be strings
+2. we can use the two json methods to store objects in lo0cal storage:
+
+JSON.stringify(object) 
+    converts objects to JSON strings
+
+JSON.parse(string)
+    converts string to objects

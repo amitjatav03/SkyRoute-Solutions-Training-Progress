@@ -1,0 +1,22 @@
+# session storage
+
+used less often than localStorage
+properties and methods are same as localStorage but:
+
+1. the sessionStorage exists only within the current browser tab. another tab with same page will have a different storage.
+
+2. the data survives page refresh, but not closing/opening tabs
+
+
+## storage events:
+
+when the data gets updated in localStorage or sessionStorage, storage event triggers with these properties:
+
+1. key -> the key
+2. oldValue -> previous value
+3. newValue -> new value
+4. url -> page url
+5. storageArea -> local or session storage
+
+
+we can listen the onstorage event of window which is triggered when updates are made to the same storage from other documents.
