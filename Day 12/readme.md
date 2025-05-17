@@ -5,7 +5,6 @@
 **Status**: Completed
 
 ### Topics Covered:
-- Implemented useRef and useContext hooks for form state management
 - Built controlled and uncontrolled form components
 - Created form validation system with manual validation checks
 - Practiced capturing and handling form input data
