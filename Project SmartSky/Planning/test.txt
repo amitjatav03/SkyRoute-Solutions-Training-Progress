@@ -1,0 +1,77 @@
+Email Handling
+1. Nodemailer
+Send emails via SMTP (Gmail, Outlook, custom servers)
+Required for sending initial and follow-up emails
+Installation: npm install nodemailer
+2. Gmail API / Google OAuth2
+For reading inbox to detect replies (optional but recommended for production)
+Use googleapis NPM package
+Installation: npm install googleapis
+3. imap-simple
+Alternative to Gmail API for reading emails using IMAP
+Installation: npm install imap-simple
+CSV & File Upload
+4. multer
+Middleware to handle CSV uploads in Express
+Installation: npm install multer
+5. csv-parser
+To parse CSV files into JSON format
+Installation: npm install csv-parser
+Exporting Data (Leads)
+6. exceljs
+Create and export Excel sheets (leads export feature)
+Installation: npm install exceljs
+7. json2csv (alternative)
+For CSV export instead of Excel
+Installation: npm install json2csv
+Scheduling Follow-ups
+8. node-cron
+Schedule tasks like sending follow-up emails
+Installation: npm install node-cron
+9. node-schedule (alternative)
+More advanced cron job support
+Installation: npm install node-schedule
+Backend Development
+10. express
+Fast and minimalist web framework for Node.js
+Installation: npm install express
+11. mongoose
+ODM to work with MongoDB easily
+Installation: npm install mongoose
+12. dotenv
+Load environment variables from .env file
+Installation: npm install dotenv
+13. cors
+Enable Cross-Origin Resource Sharing
+Installation: npm install cors
+Logging & Debugging
+14. morgan
+Logs API calls and useful for debugging
+Installation: npm install morgan
+15. winston
+Advanced logging with log files and levels
+Installation: npm install winston
+Frontend Animation & Styling
+16. GSAP
+Smooth animations
+Installation: npm install gsap
+17. Framer Motion
+Animate React components
+Installation: npm install framer-motion
+18. Locomotive Scroll
+Smooth scroll with animation triggers
+Installation: npm install locomotive-scroll
+Security (Optional for Later Phases)
+19. bcryptjs
+For password hashing
+Installation: npm install bcryptjs
+20. jsonwebtoken (JWT)
+For user login/authentication
+Installation: npm install jsonwebtoken
+Other Helpful Tools
+21. concurrently
+Run frontend and backend together during development
+Installation: npm install concurrently --save-dev
+22. nodemon
+Auto-restarts backend on file changes
+Installation: npm install nodemon --save-dev

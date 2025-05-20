@@ -5,7 +5,7 @@ const App = () => {
   const [name, setName] = useState('love')
 
   // useEffect - allow component to perform side-effects
-  // jis bhi component ke andar aap useEffect hook likhte hain, wo us component ke render hone ke baad iske andar jo bhi code likha hoga uska render krega
+  // jis bhi component ke andar aap useEffect hook likhte hain, wo us component ke render hone ke baad iske andar jo bhi code likha hoga usko render krega
 
   // variation-1: every render
   // useEffect(() => {

@@ -9,6 +9,7 @@ function NewProduct(props) {
 
         // calling parent function
         props.product(prod)
+        // console.log(props.product)
     }
 
     return (

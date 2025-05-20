@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './ProductForm.css'
 
 function ProductForm(props) {
-
     const [newTitle, setTitle] = useState('')
     const [newDate, setDate] = useState('')
 

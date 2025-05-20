@@ -41,12 +41,12 @@ main.jsx
 
 1. what ?
 
-facebook ko ek problem najar aai ki real time mein wo notifications and reactions ko nahi show nahi kar paa rahe hai, unhe reactions, notifications and other data deliver karne mein page reload karna pad raha hai, and wo isliye kyoki they were using something called php, ab is problem se nipatne ke liye 2013 mein ek facebook ke engineer ne ek library banayi, ye library khaas thi, kyuki ye data ko real time mein dikha paa rahi thi, par is library ke kaam karne ka tareeka different tha
+facebook ko ek problem najar aai ki real time mein wo notifications and reactions ko show nahi kar paa rahe hai, unhe reactions, notifications and other data deliver karne mein page reload karna pad raha hai, and wo isliye kyoki they were using something called php, ab is problem se nipatne ke liye 2013 mein ek facebook ke engineer ne ek library banayi, ye library khaas thi, kyuki ye data ko real time mein dikha paa rahi thi, par is library ke kaam karne ka tareeka different tha
 
 
 browsers ka nature hota hai jab bhi page mein kuchh bhi change ho to poora DOM tree refresh karo, jiski wajah se poora page re-render hoga, jo ki kaafi inefficient hai, matlab ki socho agar ek change par DOM ek baar refresh ho raha hai to 1 lakh change par 1 lakh baar refresh hoga, browser crash ho sakta hai
 
-* facebook ko ek problem najar aai ki real time mein wo notifications and reactions ko nahi show nahi kar paa rahe hai, unhe reactions, notifications and other data deliver karne mein page reload karna pad raha hai, and wo isliye kyoki they were using something called php, ab is problem se nipatne ke liye 2013 mein ek facebook ke engineer ne ek library banayi, ye library khaas thi, kyuki ye data ko real time mein dikha paa rahi thi, par is library ke kaam karne ka tareeka different tha,
+* facebook ko ek problem najar aai ki real time mein wo notifications and reactions ko  show nahi kar paa rahe hai, unhe reactions, notifications and other data deliver karne mein page reload karna pad raha hai, and wo isliye kyoki they were using something called php, ab is problem se nipatne ke liye 2013 mein ek facebook ke engineer ne ek library banayi, ye library khaas thi, kyuki ye data ko real time mein dikha paa rahi thi, par is library ke kaam karne ka tareeka different tha,
 ye main DOM tree ko update nahi krti hai directly, matlab ki agar page mein kuchh bhi change hua to directly main DOM tree update nahi hoga, is library ka khud ka ek DOM tree hai uska naam hai virtual DOM. ye DOM tree exact copy hai real DOM tree ka, bas ek difference hai, wo hai ki jab bhi virtual DOM mein kuchh change hoga to sirf use change kiya jaayega jo ki change hua hai naa ki poore tree ko refresh kiya jaayega.
 
 hence react became so famous and useful for big application.
@@ -95,6 +95,7 @@ jab aapko ek thoda bade level par app create karna ho, jismein khoob saari cheej
 
 
 * react coding mein saara code khud se nahi likhna padta hai, react waalo ne aapko ek tool diya hai uska naam hai create-react-app
+
 
 raw format mein react sikhna hai to --> vite
 
@@ -180,7 +181,7 @@ state koi bhi data ho sakta hai, jaise ki score = 0
 useState(0)
 
 
-maan lete hain aapke game mein score by default 0 se shuru hota hai and future mein wo score badhega by 10 aur aapko page pe show bhi karna hai jab score badhe, to use case mein aapka score variable ek state mein rakhna jaruri hai, kyuki react sirf use change karta hai jo state mein hota hai
+maan lete hain aapke game mein score by default 0 se shuru hota hai and future mein wo score badhega by 10 aur aapko page pe show bhi karna hai jab score badhe, to use case mein aapka score variable ek state mein rakhna jaruri hai, kyuki react sirf ussey change karta hai jo state mein hota hai
 
 
 jo value hame access karni hai, use access karne ke liye hame array ka 0th member element access karna jaruri hai
